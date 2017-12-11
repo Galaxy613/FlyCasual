@@ -70,7 +70,7 @@ namespace Abilities
         {
             bool result = false;
 
-            if (HostShip.Hull == 2) result = true; // Why?
+            if (HostShip.Hull == 2) result = true;
             if (Combat.CurrentCriticalHitCard.IsFaceUp) result = true;
 
             return result;
