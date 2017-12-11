@@ -70,7 +70,7 @@ namespace Abilities
         {
             bool result = false;
 
-            if (HostShip.Hull == 2) result = true;
+            if (HostShip.Hull == 2) result = true; // Why?
             if (Combat.CurrentCriticalHitCard.IsFaceUp) result = true;
 
             return result;
@@ -89,7 +89,7 @@ namespace Abilities
             }
             else
             {
-                Messages.ShowError("Error: No astromech to disacard!");
+                Messages.ShowError("Error: No astromech to discard!");
                 SubPhases.DecisionSubPhase.ConfirmDecision();
             }
         }
